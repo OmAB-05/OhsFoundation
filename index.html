@@ -2,39 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My GitHub Page</title>
+  <title>School Foundation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #E6F0FA; /* Light blue */
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      margin: 2em;
+      color: #002F6C; /* Navy */
     }
-    h2 {
-      color: #2c3e50;
+
+    .section {
+      padding: 60px 20px;
     }
-    
-    h3 {
-      color: navy;
+
+    .card, .button-container {
+      display: inline-block;
+      vertical-align: top;
+      margin: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 40px;
+      width: 150px;
+      height: 150px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: popUp 1s ease-out forwards;
     }
-    
-    p {
-      color: #555;
+
+    .button-container {
+      background-color: #002F6C;
+      color: white;
+      line-height: 150px;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    footer {
-      margin-top: 2em;
-      font-size: 0.9em;
-      color: #999;
+
+    .button-container:hover {
+      transform: scale(1.05) translateY(0);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    .card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .button-container {
+      animation-delay: 0.4s;
+    }
+
+    .card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .text-content {
+      margin-top: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: popUp 1s ease-out 0.8s forwards;
+    }
+
+    @keyframes popUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <h2>Welcome to My Website</h2>
-  <h3>This is a Test Heading in Navy Blue</h3>
-  <p>This is a simple HTML page hosted for free using GitHub Pages.</p>
 
-  <footer>
-    &copy; 2025 OHS
-  </footer>
+  <div class="section">
+    <div class="card">
+      <!-- Replace with your own image or icon -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Heart_icon_red_hollow.svg" alt="Heart" width="60">
+    </div>
+
+    <div class="button-container" onclick="window.location.href='https://yourdonationlink.com'">
+      DONATE
+    </div>
+
+    <div class="card">
+      <!-- Replace with your second image -->
+      <img src="https://via.placeholder.com/60x60?text=📸" alt="Image" width="60">
+    </div>
+
+    <div class="text-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+      <p>Support our mission to empower every student with opportunity and excellence.</p>
+    </div>
+  </div>
+
 </body>
 </html>
