@@ -65,6 +65,33 @@
 			  0%   { transform: translateX(0); }
 			  100% { transform: translateX(-100%); }
 			}
+
+			.marquee {
+  			  overflow: hidden;
+			  white-space: nowrap;
+			  box-sizing: border-box;
+			  width: 100%;
+			}
+			
+			.marquee-images {
+			  display: inline-block;
+			  animation: scroll-left 15s linear infinite;
+			}
+			
+			.marquee-images img {
+			  height: 100px; /* or whatever size you prefer */
+			  margin-right: 20px;
+			  vertical-align: middle;
+			}
+			
+			@keyframes scroll-left {
+			  0% {
+			    transform: translateX(100%);
+			  }
+			  100% {
+			    transform: translateX(-100%);
+			  }
+			}
 			
 			footer {
 			  text-align: center;
@@ -84,12 +111,16 @@
 	<div class="container">
     		<!-- <img src="https://cdnsm5-ss16.sharpschool.com/UserFiles/Servers/Server_64096/Image/Our%20School/OHS%20Foundation/2393.screen_shot_2016-03-03_at_1.05.53_pm.png" style="width:238px; height:175px;" alt="girls writing" title="girls writing"/> 
 		<img src="https://cdnsm5-ss16.sharpschool.com/UserFiles/Servers/Server_64096/Image/Our%20School/OHS%20Foundation/2393.screen_shot_2016-03-03_at_1.06.13_pm.png" style="width:244px; height:175px;" alt="girls on cell" title="girls on cell"/> -->
+	
+		<div class="marquee">
+  		<div class="marquee-images">
 		
 		<img src="./images/BAA_7704_copy.jpg" style="width:250px; height:185px;" alt="OHS Foundation Photo">
 		<img src="./images/BAA_7732_copy.jpg" style="width:250px; height:185px;" alt="OHS Foundation Photo 2">
 		<img src="./images/BAA_7801_copy.jpg" style="width:250opx; height:185px;" alt="OHS Foundation Photo 3">
 		<!--<img src="./images/BAA_7767_copy.jpg" style="width:250px; height:185px;" alt="OHS Foundation Photo 4">-->
-		<div class="section">
+		</div></div>
+			<div class="section">
 			<h2>Mission Statement</h2>
 			<p>
 				Olympia High School Foundation's sole purpose is to preserve and enhance the quality of education at OHS by raising money to meet specific OHS academic needs.
