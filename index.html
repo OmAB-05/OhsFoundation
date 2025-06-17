@@ -1,127 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>School Foundation</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #E6F0FA; /* Light blue */
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      color: #002F6C; /* Navy */
-    }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Support Our Foundation</title>
+		<style>
+			body {
+			  margin: 0;
+			  font-family: 'Segoe UI', sans-serif;
+			  background: linear-gradient(to right, #f3f4f6, #e2e8f0);
+			  color: #333;
+			}
 
-    .section {
-      padding: 60px 20px;
-    }
+			header {
+			  background: #1e3a8a;
+			  color: white;
+			  padding: 2rem 1rem;
+			  text-align: center;
+			}
 
-    .card, .button-container {
-      display: inline-block;
-      vertical-align: top;
-      margin: 20px;
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 40px;
-      width: 150px;
-      height: 150px;
-      opacity: 0;
-      transform: translateY(40px);
-      animation: popUp 1s ease-out forwards;
-    }
+			header h1 {
+			  margin: 0;
+			  font-size: 2.5rem;
+			}
 
-    .button-container {
-      background-color: #002F6C;
-      color: white;
-      line-height: 28px;      /* match with new height */
-      font-weight: bold;
-      font-size: 20px;        /* slightly smaller text */
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      width: 120px;           /* smaller width */
-      height: 28px;           /* smaller height */
-      margin-top: 60px;
-      border-radius: 8px;     /* slightly smaller corner rounding */
-}
+			.container {
+			  padding: 20px;
+			  max-width: 1000px;
+			  margin: auto;
+			}
 
+			.donate-button {
+			  display: inline-block;
+			  margin-top: 1rem;
+			  padding: 0.75rem 1.5rem;
+			  background: #10b981;
+			  color: white;
+			  font-size: 1rem;
+			  border: none;
+			  border-radius: 6px;
+			  cursor: pointer;
+			  text-decoration: none;
+			  text-align: center;
+			}
 
+			.donate-button:hover {
+			  background: #059669;
+			}
 
+			 .marquee {
+			  width: 100%;
+			  overflow: hidden;
+			  white-space: nowrap;
+			  box-sizing: border-box;
+			}
 
+			.marquee-text {
+			  display: inline-block;
+			  padding-left: 100%;
+			  animation: marquee 10s linear infinite;
+			}
 
-    .button-container:hover {
-      transform: scale(1.05) translateY(0);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-    }
+			@keyframes marquee {
+			  0%   { transform: translateX(0); }
+			  100% { transform: translateX(-100%); }
+			}
+			
+			footer {
+			  text-align: center;
+			  padding: 1rem;
+			  background: #1e293b;
+			  color: white;
+			}
+		 </style>
+	</head>
+	
+	<body>
+	<header>
+		<h1>OHS Foundation</h1>
+		<p>Olympia High School Classroom Fund</p>
+	</header>
+	
+	<div class="container">
+    	<img src="https://cdnsm5-ss16.sharpschool.com/UserFiles/Servers/Server_64096/Image/Our%20School/OHS%20Foundation/2393.screen_shot_2016-03-03_at_1.05.53_pm.png" style="width:238px; height:175px;" alt="girls writing" title="girls writing"/> 
+		<img src="https://cdnsm5-ss16.sharpschool.com/UserFiles/Servers/Server_64096/Image/Our%20School/OHS%20Foundation/2393.screen_shot_2016-03-03_at_1.06.13_pm.png" style="width:244px; height:175px;" alt="girls on cell" title="girls on cell"/>
 
-    .card:nth-child(1) {
-      animation-delay: 0.2s;
-    }
+		<div class="section">
+			<h2>Mission Statement</h2>
+			<p>
+				Olympia High School Foundation's sole purpose is to preserve and enhance the quality of education at OHS by raising money to meet specific OHS academic needs.
+			</p>
+			<p>	
+				Since our start in 2009 we have donated more than $15,000 to Olympia High School for items such as 	microscopes, textbooks, choir robes, and student tutoring.
+			</p>
+			<p>	
+				100% of your tax deductible contribution will be used this year to fund teacher identified classroom 	needs at Olympia High School.
+			</p>
+			<a href="#" class="donate-button">Donate Now</a>
+		</div>
 
-    .button-container {
-      animation-delay: 0.4s;
-    }
+		<div class="section">
+			<h3>Contact Us</h3>
+				Please email OHSFoundation@gmail.com if you would like to join our fundraising efforts.
+				<p style="color: #007BFF;"><strong>Support OHS students with your tax-deductible contribution today!</strong></p>  
+			<div class="marquee">
+				<!-- <span class="marquee-text" style="color: #007BFF;"><strong>Support OHS students with your tax-deductible contribution today!</strong></span> -->
+			</div>
+		</div>
 
-    .card:nth-child(3) {
-      animation-delay: 0.6s;
-    }
+		<div class="section">
+		  <h4>Read More</h4>
+		  <a href="https://cdnsm5-ss16.sharpschool.com/UserFiles/Servers/Server_64096/File/2393.ohs_classroom_fund_brochure.pdf">OHS Foundation Flier</a>
+		</div>
+	</div>
 
-    .text-content {
-      margin-top: 40px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: popUp 1s ease-out 0.8s forwards;
-    }
-
-    @keyframes popUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="section">
-    <div class="card">
-      <!-- Replace with your own image or icon -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Heart_icon_red_hollow.svg" alt="Heart" width="60">
-    </div>
-
-    <div class="button-container" onclick="window.location.href='https://yourdonationlink.com'">
-      DONATE
-    </div>
-
-    <div class="card">
-      <!-- Replace with your second image -->
-      <img src="https://via.placeholder.com/60x60?text=📸" alt="Image" width="60">
-    </div>
-
-    <div class="text-content">
-  <p><strong>Mission Statement:</strong></p>
-  <p>Olympia High School Foundation's sole purpose is to preserve and enhance the quality of education at OHS by raising money to meet specific OHS academic needs.</p>
-  
-  <p>Since our start in 2009 we have donated more than $15,000 to Olympia High School for items such as microscopes, textbooks, choir robes, and student tutoring.</p>
-  
-  <p>100% of your tax deductible contribution will be used this year to fund teacher-identified classroom needs at Olympia High School.</p>
-  
-  <p>Please email <a href="mailto:OHSFoundation@gmail.com">OHSFoundation@gmail.com</a> if you would like to join our fundraising efforts.</p>
-  
-  <p><strong>Support OHS students with your tax-deductible contribution today!</strong></p>
-  
-  <p>
-    Read More: 
-    <a href="https://cdnsm5-ss16.sharpschool.com/UserFiles/Servers/Server_64096/File/2393.ohs_classroom_fund_brochure.pdf" target="_blank" style="color: #002F6C; text-decoration: underline;">
-      OHS Foundation Flier
-    </a>
-  </p>
-</div>
-
-
-</body>
+	<footer>
+		&copy; 2025 OHS | All rights reserved.
+	</footer>
+	</body>
 </html>
