@@ -117,6 +117,35 @@
 			  display: block;
 			}
 
+			.dashboard {
+			  display: flex;               /* horizontal layout */
+			  justify-content: space-around; /* spread items evenly */
+			  align-items: center;
+			  background-color: #1976c8;  /* blue background */
+			  padding: 20px 0;
+			}
+			
+			.dashboard-item {
+			  display: flex;
+			  flex-direction: column;     /* icon on top, text below */
+			  align-items: center;
+			  text-decoration: none;      /* remove underline */
+			  color: white;               /* text color */
+			  font-family: sans-serif;
+			  width: 100px;               /* optional, controls spacing */
+			}
+			
+			.dashboard-item img {
+			  width: 40px;                /* icon size */
+			  height: 40px;
+			  margin-bottom: 8px;         /* space between icon and text */
+			}
+			
+			.dashboard-item span {
+			  text-align: center;
+			  font-size: 12px;
+			  font-weight: 500;
+			}
 
 			footer {
 			  text-align: center;
@@ -199,6 +228,30 @@
     <!--<img src="BAA_7767_copy.jpg" alt="Event Image" /> -->
 	<img src="./images/BAA_7767_copy.jpg" style="width:250px; height:185px;" alt="OHS Foundation Photo 4">
   </div>
+</div>
+
+<div class="dashboard">
+  <a href="link1.html" class="dashboard-item">
+    <img src="bus-icon.png" alt="Transportation" />
+    <span>TRANSPORTATION</span>
+  </a>
+
+  <a href="link2.html" class="dashboard-item">
+    <img src="calendar-icon.png" alt="Calendar" />
+    <span>CALENDAR</span>
+  </a>
+
+  <a href="link3.html" class="dashboard-item">
+    <img src="clock-icon.png" alt="Daily Bulletin" />
+    <span>DAILY BULLETIN</span>
+  </a>
+
+  <a href="link4.html" class="dashboard-item">
+    <img src="phone-icon.png" alt="Emergency" />
+    <span>EMERGENCY</span>
+  </a>
+
+  <!-- Add more items as needed -->
 </div>
 
 	</div>
