@@ -92,7 +92,17 @@
 			    transform: translateX(100%);
 			  }
 			}
-			
+
+			/* Only affects this block */
+			.section.tight-spacing p {
+ 			 margin: 4px 0; /* smaller gap between lines inside this block */
+			}
+
+			/* Keep normal spacing after the h3 */
+			.section.tight-spacing h3 {
+			  margin-bottom: 16px; /* normal gap below title */
+			}
+
 			footer {
 			  text-align: center;
 			  padding: 1rem;
@@ -160,7 +170,7 @@
 			</div> 
 		</div>
 		
-<div class="section">
+<div class="section tight-spacing">
   <h3>Upcoming Events:</h3>
   <p><strong>Performing Band:</strong> xxx</p>
   <p><strong>When:</strong> September 26th, 7:30pm – 10pm</p>
@@ -168,7 +178,6 @@
   <p><strong>For:</strong> xxx foundation kickoff</p>
   <p><strong>Note:</strong> Food Trucks and Drinks available for purchase</p>
 </div>
-
 
 	</div>
 	
