@@ -93,15 +93,30 @@
 			  }
 			}
 
-			/* Only affects this block */
-			.section.tight-spacing p {
- 			 margin: 4px 0; /* smaller gap between lines inside this block */
+			.event-block {
+			  display: flex;           /* makes left and right sit side by side */
+			  align-items: flex-start; /* aligns top edges */
+			  gap: 20px;               /* space between text and image */
+			}
+			
+			.event-block .event-text {
+			  flex: 1;                 /* text takes remaining space */
+			}
+			
+			.event-block .event-text p {
+			  margin: 4px 0;           /* tighter spacing for this block only */
+			}
+			
+			.event-block .event-text h3 {
+			  margin-bottom: 16px;     /* space below the title */
+			}
+			
+			.event-block .event-image img {
+			  max-width: 300px;        /* set image width, adjust as needed */
+			  height: auto;            /* keeps aspect ratio */
+			  display: block;
 			}
 
-			/* Keep normal spacing after the h3 */
-			.section.tight-spacing h3 {
-			  margin-bottom: 16px; /* normal gap below title */
-			}
 
 			footer {
 			  text-align: center;
@@ -170,13 +185,18 @@
 			</div> 
 		</div>
 		
-<div class="section tight-spacing">
-  <h3>Upcoming Events:</h3>
-  <p><strong>Performing Band:</strong> xxx</p>
-  <p><strong>When:</strong> September 26th, 7:30pm – 10pm</p>
-  <p><strong>Where:</strong> xxx</p>
-  <p><strong>For:</strong> xxx foundation kickoff</p>
-  <p><strong>Note:</strong> Food Trucks and Drinks available for purchase</p>
+<div class="event-block">
+  <div class="event-text">
+    <h3>Upcoming Events:</h3>
+    <p><strong>Performing Band:</strong> xxx</p>
+    <p><strong>When:</strong> September 26th, 7:30pm – 10pm</p>
+    <p><strong>Where:</strong> xxx</p>
+    <p><strong>For:</strong> xxx foundation kickoff</p>
+    <p><strong>Note:</strong> Food Trucks and Drinks available for purchase</p>
+  </div>
+  <div class="event-image">
+    <img src="BAA_7767_copy.jpg" alt="Event Image" />
+  </div>
 </div>
 
 	</div>
