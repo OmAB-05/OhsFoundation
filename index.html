@@ -16,8 +16,21 @@
 			  background: #1e3a8a;
 			  color: white;
 			  padding: 2rem 1rem;
+			  
+			  display: flex;               /* arrange items in a row */
+			  align-items: center;         /* vertically center */
+			  justify-content: space-between; /* logos on edges, text in middle */
+			}
+			
+			header .logo {
+			  height: 60px;   /* adjust to your preferred size */
+			  width: auto;
+			}
+			
+			header .header-text {
 			  text-align: center;
 			}
+
 
 			header h1 {
 			  margin: 0;
@@ -158,8 +171,8 @@
 	
 	<body>
 	<header>
-		<img src="./images/OHS foundation Logo.png" alt="Pepper Logo">
-		<h1>OHS Foundation</h1>
+		<img src="./images/OHS foundation Logo.png" alt="Pepper Logo" class="logo">
+		<h1>OHS Foundation</h1> 
 		<p>Olympia High School Classroom Fund</p>
 	</header>
 	
